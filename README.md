@@ -98,6 +98,48 @@ if __name__ == "__main__":
     main()
 ```
 
-## License
+# Representación Matemática de Señales Continuas y Discretas
 
-This project is licensed under the MIT License.
+## Señales Continuas
+
+### 1. Señal Sinusoidal Continua
+La señal sinusoidal continua se representa matemáticamente como:
+\[ x(t) = A \sin(2 \pi f t + \phi) \]
+Donde:
+- \( x(t) \) es la amplitud de la señal en el tiempo \( t \).
+- \( A \) es la amplitud máxima de la señal.
+- \( f \) es la frecuencia de la señal en Hz.
+- \( \phi \) es la fase de la señal en radianes.
+
+### 2. Señal Cuadrada Continua
+La señal cuadrada continua se puede definir usando la función signo de la señal sinusoidal:
+\[ x(t) = A \cdot \text{sgn}(\sin(2 \pi f t + \phi)) \]
+Donde:
+- \( \text{sgn}(x) \) es la función signo, que devuelve 1 si \( x \) es positivo, -1 si \( x \) es negativo, y 0 si \( x \) es cero.
+
+### 3. Señal Triangular Continua
+La señal triangular continua puede representarse usando la función arco seno de la señal sinusoidal:
+\[ x(t) = \frac{2A}{\pi} \arcsin(\sin(2 \pi f t + \phi)) \]
+
+## Señales Discretas
+
+### 1. Señal Sinusoidal Discreta
+La señal sinusoidal discreta se representa matemáticamente como:
+\[ x[n] = A \sin(2 \pi f n T + \phi) \]
+Donde:
+- \( x[n] \) es la amplitud de la señal en el instante de muestreo \( n \).
+- \( A \) es la amplitud máxima de la señal.
+- \( f \) es la frecuencia de la señal en Hz.
+- \( T \) es el periodo de muestreo (el inverso de la frecuencia de muestreo \( f_s \)).
+- \( \phi \) es la fase de la señal en radianes.
+
+### 2. Señal Cuadrada Discreta
+La señal cuadrada discreta se puede definir usando la función signo de la señal sinusoidal:
+\[ x[n] = A \cdot \text{sgn}(\sin(2 \pi f n T + \phi)) \]
+Donde:
+- \( \text{sgn}(x) \) es la función signo, que devuelve 1 si \( x \) es positivo, -1 si \( x \) es negativo, y 0 si \( x \) es cero.
+
+### 3. Señal Triangular Discreta
+La señal triangular discreta puede representarse usando la función arco seno de la señal sinusoidal:
+\[ x[n] = \frac{2A}{\pi} \arcsin(\sin(2 \pi f n T + \phi)) \]
+
