@@ -98,48 +98,48 @@ if __name__ == "__main__":
     main()
 ```
 
-# Representación Matemática de Señales Continuas y Discretas
+# Mathematical Representation of Continuous and Discrete Signals
 
-## Señales Continuas
+## Continuous Signals
 
-### 1. Señal Sinusoidal Continua
-La señal sinusoidal continua se representa matemáticamente como:
-\[ x(t) = A \sin(2 \pi f t + \phi) \]
-Donde:
-- \( x(t) \) es la amplitud de la señal en el tiempo \( t \).
-- \( A \) es la amplitud máxima de la señal.
-- \( f \) es la frecuencia de la señal en Hz.
-- \( \phi \) es la fase de la señal en radianes.
+### 1. Continuous Sinusoidal Signal
+The continuous sinusoidal signal is represented mathematically as:
+$x(t) = A \sin(2 \pi f t + \phi)$
+Where:
+- $x(t)$ is the amplitude of the signal in time $t$.
+- $A$ is the maximum amplitude of the signal.
+- $f$ is the frequency of the signal in Hz.
+- $phi$ is the phase of the signal in radians.
 
-### 2. Señal Cuadrada Continua
-La señal cuadrada continua se puede definir usando la función signo de la señal sinusoidal:
-\[ x(t) = A \cdot \text{sgn}(\sin(2 \pi f t + \phi)) \]
-Donde:
-- \( \text{sgn}(x) \) es la función signo, que devuelve 1 si \( x \) es positivo, -1 si \( x \) es negativo, y 0 si \( x \) es cero.
+### 2. Continuous Square Signal
+The continuous square signal can be defined using the sign function of the sinusoidal signal:
+$x(t) = A \cdot \text{sgn}(\sin(2 \pi f t + \phi))$
+Where:
+- $\text{sgn}(x)$ is the sign function, which returns 1 if $x$ is positive, -1 if $x$ is negative, and 0 if $x$ is zero.
 
-### 3. Señal Triangular Continua
-La señal triangular continua puede representarse usando la función arco seno de la señal sinusoidal:
-\[ x(t) = \frac{2A}{\pi} \arcsin(\sin(2 \pi f t + \phi)) \]
+### 3. Continuous Triangular Signal
+The continuous triangular signal can be represented using the sine arc function of the sinusoidal signal:
+\[ x(t) = \frac{2A}{\arcsin(\sin(2 \pi f t + \phi)) \]
 
-## Señales Discretas
+## Discrete signals
 
-### 1. Señal Sinusoidal Discreta
-La señal sinusoidal discreta se representa matemáticamente como:
-\[ x[n] = A \sin(2 \pi f n T + \phi) \]
-Donde:
-- \( x[n] \) es la amplitud de la señal en el instante de muestreo \( n \).
-- \( A \) es la amplitud máxima de la señal.
-- \( f \) es la frecuencia de la señal en Hz.
-- \( T \) es el periodo de muestreo (el inverso de la frecuencia de muestreo \( f_s \)).
-- \( \phi \) es la fase de la señal en radianes.
+### 1. Discrete Sinusoidal Signal
+The discrete sinusoidal signal is represented mathematically as:
+$x[n] = A \sin(2 \pi f n T + \phi))$.
+Where:
+- $x[n]$ is the amplitude of the signal at the sampling instant $n$.
+- $A$ is the maximum amplitude of the signal.
+- $f$ is the frequency of the signal in Hz.
+- $T$ is the sampling period (the inverse of the sampling frequency $f_s$.
+- $\phi$ is the phase of the signal in radians.
 
-### 2. Señal Cuadrada Discreta
-La señal cuadrada discreta se puede definir usando la función signo de la señal sinusoidal:
-\[ x[n] = A \cdot \text{sgn}(\sin(2 \pi f n T + \phi)) \]
-Donde:
-- \( \text{sgn}(x) \) es la función signo, que devuelve 1 si \( x \) es positivo, -1 si \( x \) es negativo, y 0 si \( x \) es cero.
+### 2. Discrete Square Signal
+The discrete square signal can be defined by using the sign function of the sinusoidal signal:
+$x[n] = A \text{sgn}(2 \pi f n T + \phi))$
+Where:
+- $\text{sgn}(x)$ is the sign function, which returns 1 if $x$ is positive, -1 if $x$ is negative, and 0 if $x$ is zero.
 
-### 3. Señal Triangular Discreta
-La señal triangular discreta puede representarse usando la función arco seno de la señal sinusoidal:
-\[ x[n] = \frac{2A}{\pi} \arcsin(\sin(2 \pi f n T + \phi)) \]
+### 3. Discrete Triangular Signal
+The discrete triangular signal can be represented using the sine arc function of the sinusoidal signal:
+$x[n] = \arcsin(2 \sin(2 \pi f n T + \phi))$
 
